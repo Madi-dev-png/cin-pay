@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    flex: 1.8; 
+    background: url('https://app-new.cinetpay.com/images/login-cover.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    padding: 20px;
+}
+
+.overlay-text {
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.partners img {
+    width: 120px;
+    margin-left: 0;
+}
+
+.right-section {
+    flex: 0.8; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    margin-left: 40px; 
+}
+
+.right-section h2 {
+    text-align: left;
+    font-size: 25px;
+    max-width: 300px;
+    line-height: 1.2;
+}
+
+.right-section img {
+    width: 200px;
+}
+
+.highlight {
+    color: #E74C3C;
+    font-weight: bold;
+}
+
+form {
+    width: 100%;
+    max-width: 350px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #E74C3C;
+    padding: 10px;
+    width: 100%;
+    
+
+}
+
+.create-account {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #E74C3C;
+    font-weight: bold;
+    background: #FADBD8;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.contact-info {
+    max-width: 300px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section {
+        height: 40vh;
+    }
+
+    .right-section {
+        height: 60vh;
+        margin-left: 0;
+    }
+}
