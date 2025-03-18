@@ -395,7 +395,7 @@ h1 {
     padding: 50px 20px;
 }
 
-.confiance h2 {
+.confiance h4 {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -419,11 +419,12 @@ h1 {
     padding: 50px 20px;
 }
 
-.temoignages h2 {
+.temoignages h4 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 .conteneur-cartes {
@@ -618,6 +619,7 @@ h5 {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .Box {
     background: rgb(33, 37, 41);
     display: flex;
@@ -780,14 +782,18 @@ h2 {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+    .navbar-bottom {
+        display: none; 
+    }
+
+
     body {
         font-size: 14px;
     }
 
     .hero {
         height: auto;
-        width: 90%;
         padding: 30px 15px;
     }
 
@@ -795,57 +801,91 @@ h2 {
         font-size: 30px;
     }
 
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .btn-1 a, .btn-2 a {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .confiance, .temoignages {
+        padding: 30px 15px;
+    }
+
+    .logos img {
+        max-width: 100px;
+    }
+
+    .conteneur-cartes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carte {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px; 
+    }
+
+    .hero {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
     .description {
-        font-size: 16px;
+        font-size: 14px;
         margin: 10px auto;
     }
 
     .btn-2 a {
         padding: 8px 15px;
-        font-size: 12px;
     }
 
-    .menu a {
-        font-size: 12px;
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .stat {
-        font-size: 14px;
-    }
-
-    .centered-video {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .footer {
-        padding: 40px 15px;
-        font-size: 12px;
-    }
-
-    .newsletter input {
-        width: 150px;
-        font-size: 12px;
-    }
-
-    .footer-section ul li a {
-        font-size: 12px;
-    }
-
-    .confiance h2, .temoignages h2 {
-        font-size: 24px;
-    }
-
-    .temoignages h2 {
-        font-size: 22px;
-    }
-
-    .logos img {
-        max-width: 80px;
-    }
-
-    .quote-box, .quote-box2 {
-        padding: 15px;
-        font-size: 14px;
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
     }
 }
+
+.navbar {
+    display: block;
+  }
+  
+  @media (min-width: 1024px) {
+    .navbar {
+      display: none;
+    }
+  }
+  
